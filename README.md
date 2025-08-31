@@ -31,5 +31,5 @@ Développé par *Uniware* (fondé par Zetsukae, 2023).
 - Pour Windows 10/11 :
 Installez le setup.exe et suivez les instructions d'installations.
 
-- Pour Linux
+- Pour Linux :
   Sauvegardez le dossier "linux-unpacked" vous pourrez ainsi lancez l'application ou la modifié, si vous souhaitez juste utilisé l'application, il vous suffira de la packé. 
