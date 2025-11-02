@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Uniware Glint</title>
+  <link rel="icon" type="image/png" href="./pages/assets/home.png" id="default-favicon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="zone-barre">
+    <div id="drag-space"></div>
+    <div id="titlebar-tabs">
+      <div id="titlebar-tabs-wrapper">
+         Tabs will be inserted here dynamically 
+      </div>
+      <button id="titlebar-add-tab">+</button>
+    </div>
+
+    <div class="titlebar-left-section">
+      <div id="titlebar-nav-controls">
+        <button id="titlebar-back" class="titlebar-nav-btn" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+        </button>
+        <button id="titlebar-forward" class="titlebar-nav-btn" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+        <button id="titlebar-reload" class="titlebar-nav-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/>
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+        </button>
+      </div>
+      <div id="titlebar-url-container">
+        <input id="titlebar-url-bar" placeholder="Recherche Google ou URL…" />
+      </div>
+      <div class="titlebar-controls">
+        <button id="titlebar-adblocker" class="titlebar-btn" title="Bloqueur de pub">
+          <img src="https://i.imgur.com/LK69qR6.png" alt="Ad Blocker" />
+        </button>
+        <button id="titlebar-settings" class="titlebar-btn" title="Paramètres">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="7" height="7" x="3" y="3" rx="1"/>
+            <rect width="7" height="7" x="14" y="3" rx="1"/>
+            <rect width="7" height="7" x="14" y="14" rx="1"/>
+            <rect width="7" height="7" x="3" y="14" rx="1"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="window-controls">
+      <button id="btn-minimize" class="minimize-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </button>
+      <button id="btn-maximize" class="maximize-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </button>
+      <button id="btn-close">✕</button>
+    </div>
+  </div>
+
+  <div id="navigation-bar">
+    <div class="nav-controls">
+      <button id="nav-back" class="nav-btn-vivaldi back-btn" disabled>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6"/>
+        </svg>
+      </button>
+      <button id="nav-forward" class="nav-btn-vivaldi forward-btn" disabled>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6"/>
+        </svg>
+      </button>
+      <button id="nav-reload" class="nav-btn-vivaldi compass-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path class="compass-triangle" d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" style="transform-origin: center;"/>
+          <circle class="compass-circle" cx="12" cy="12" r="10"/>
+        </svg>
+      </button>
+    </div>
+    <input id="nav-url-bar" placeholder="Recherche Google ou URL…" />
+    <div class="nav-extra-controls">
+      <button id="nav-adblocker" class="nav-btn-vivaldi" title="Bloqueur de pub">
+        <img src="https://i.imgur.com/LK69qR6.png" alt="Ad Blocker" style="width: 16px; height: 16px;" />
+      </button>
+      <button id="nav-settings" class="nav-btn-vivaldi" title="Paramètres">
+        <div class="layout-grid-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect class="layout-grid-rect" width="7" height="7" x="3" y="3" rx="1"/>
+            <rect class="layout-grid-rect" width="7" height="7" x="14" y="3" rx="1"/>
+            <rect class="layout-grid-rect" width="7" height="7" x="14" y="14" rx="1"/>
+            <rect class="layout-grid-rect" width="7" height="7" x="3" y="14" rx="1"/>
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div id="highbar" style="display: none;"></div>
+
+  <div id="main-container">
+    <div id="onglets">
+
+      <input id="searchBarOnglets" placeholder="Recherche onglets…" />
+      <button id="ajouterOnglet">+ Nouvel onglet</button>
+      
+      <!-- Hidden elements for JavaScript compatibility -->
+      <div style="display: none;">
+        <input id="searchBarGoogle" />
+        <div id="barre">
+          <button id="retour"></button>
+          <button id="avancer"></button>
+          <button id="actualiser"></button>
+        </div>
+        <div id="sidebar-bottom">
+          <button id="parametres"></button>
+          <button id="adblocker"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dragHandle" title="Redimensionner la barre"></div>
+
+    <div id="conteneurPrincipal">
+      <div id="conteneur">
+       <webview id="webview" allowpopups></webview>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
