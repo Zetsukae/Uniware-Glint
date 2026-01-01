@@ -1,7 +1,7 @@
 # 🌐 Uniware Glint
 
 *Uniware Glint* est un navigateur web léger basé sur *Electron/Chromium, conçu pour être **rapide, simple et moderne*.  
-Développé par *Uniware* (fondé par Zetsukae, 2023).  
+Développé par *Uniware*. *Le projet n'est plus maintenu.*  
 
 ---
 
